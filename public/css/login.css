@@ -1,0 +1,140 @@
+body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--roxo);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #1b1b1b;
+}
+
+
+.login-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-card {
+    background: #fff;
+    padding: 44px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1b1b1b;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1b1b1b;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #1b1b1b;
+}
+
+.helper-text {
+    font-size: 13px;
+    color: var(--preto);
+    margin-bottom: 24px;
+}
+
+.helper-text a {
+    font-size: 13px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-primary {
+    background-color: var(--roxo);
+    color: var(--branco);
+    border: none;
+    padding: 10px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    min-width: 108px;
+}
+
+.btn-primary:hover {
+    background-color: var(--branco);
+}
+
+.login-page .footer {
+    color: var(--branco);
+}
+
+.login-page .footer-links a {
+    color: var(--branco);
+}
+
+
+@media (max-width: 768px) {
+
+    .login-card {
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .login-card {
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .actions {
+        justify-content: center;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    body.login-page {
+        align-items: center;
+    }
+}

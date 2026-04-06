@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde: #06D6A0;
+    --branco: #fff;
+    --roxo: #30347B;
+    --rosa-claro: #f1b8bb;
+    --preto: #000000;
+    --rosa: #f54952;
+    --cinza: #9899a3;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    color: var(--preto);
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.footer-links a {
+    color: var(--roxo);
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+
+    .login-card {
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .login-card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .actions {
+        justify-content: center;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .login-card {
+        max-width: 520px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .login-card {
+        max-width: 440px;
+        /* volta pro tamanho normal no desktop */
+    }
+}
