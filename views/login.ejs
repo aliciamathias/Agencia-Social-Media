@@ -22,10 +22,10 @@
 
             <h1>Entrar</h1>
 
-            <form id="loginForm" autocomplete="off">
+            <form action="/login" method="POST" autocomplete="off">
                 <div class="input-group">
                     <label for="email">Email, telefone ou Skype</label>
-                    <input type="text" id="email" name="email" placeholder="Email, telefone ou Skype" required
+                    <input type="email" id="email" name="email" placeholder="Email, telefone ou Skype" required
                         autofocus>
                 </div>
 
@@ -36,6 +36,10 @@
 
                 <p class="helper-text">
                     Não tem uma conta? <a href="/cadastro">Crie uma!</a>
+                </p>
+
+                <p class="helper-text">
+                    <a href="/recuperar-senha">Esqueci minha senha</a>
                 </p>
 
                 <div class="actions">

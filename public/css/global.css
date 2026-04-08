@@ -5,13 +5,12 @@
 }
 
 :root {
-    --verde: #06D6A0;
+    --verde: #23EEC2;
     --branco: #fff;
     --roxo: #30347B;
-    --rosa-claro: #f1b8bb;
+    --rosa-claro: #ecbbcb;
     --preto: #000000;
-    --rosa: #f54952;
-    --cinza: #9899a3;
+    --cinza: #989ea3;
 }
 
 .footer {
@@ -32,4 +31,3 @@
     color: var(--roxo);
     font-size: 13px;
 }
-

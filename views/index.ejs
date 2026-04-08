@@ -20,7 +20,7 @@
                     <div class="hero-text">
                         <h2>Transformamos sua marca em autoridade nas redes sociais</h2>
                         <p>Estratégia, conteúdo e resultados reais para seu negócio crescer na internet.</p>
-                        <a href="#" class="btn">Solicitar Proposta</a>
+                        <a href="#orcamento" class="btn">Solicitar Proposta</a>
                     </div>
 
                     <div class="hero-img">
@@ -89,6 +89,14 @@
 
         <%- include('partials/libras') %>
 
+            <script>
+                const toggle = document.getElementById('menu-toggle');
+                const navList = document.querySelector('.nav-list');
+
+                toggle.addEventListener('click', () => {
+                    navList.classList.toggle('active');
+                });
+            </script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 body {
     font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-    background-color: var(--roxo);
+    background-color: #dcdcdc;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -9,40 +9,26 @@ body {
     color: #1b1b1b;
 }
 
-
-.login-container {
+.orcamento-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.login-card {
+.orcamento-card {
+    background: #fff;
+    padding: 44px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.orcamento-card {
     background: #fff;
     padding: 44px;
     width: 100%;
     max-width: 500px;
     box-shadow: 0 5px 10px #1b1b1b;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    margin-bottom: 30px;
-}
-
-.logo img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-}
-
-.logo-text {
-    font-size: 20px;
-    font-weight: 600;
-    color: #1b1b1b;
 }
 
 h1 {
@@ -52,12 +38,22 @@ h1 {
     color: #1b1b1b;
 }
 
-.input-group {
-    margin-bottom: 16px;
+.orcamento-card p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: #1b1b1b;
 }
 
-.input-group input {
-    width: 100%;
+.checkbox-group {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-group input {
+    width: auto;
     padding: 12px 0;
     font-size: 16px;
     border: none;
@@ -65,23 +61,10 @@ h1 {
     color: #1b1b1b;
 }
 
-.helper-text {
-    font-size: 16px;
-    color: var(--preto);
-    margin-bottom: 24px;
-}
-
-.helper-text a {
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: underline;
-    display: inline-block;
-    padding: 4px 0;
-}
-
 .actions {
     display: flex;
     justify-content: flex-end;
+    gap: 20px;
 }
 
 .btn-primary {
@@ -99,18 +82,33 @@ h1 {
     background-color: #30347b9f;
 }
 
-.login-page .footer {
+.btn-secondary {
+    background-color: #575757;
     color: var(--branco);
+    border: none;
+    padding: 10px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    min-width: 108px;
 }
 
-.login-page .footer-links a {
-    color: var(--branco);
+.btn-secondary:hover {
+    background: var(--cinza);
+}
+
+.orcamento-page .footer {
+    color: var(--preto);
+}
+
+.orcamento-page .footer-links a {
+    color: var(--preto);
 }
 
 
 @media (max-width: 768px) {
 
-    .login-card {
+    .orcamento-card {
         padding: 30px;
     }
 
@@ -118,7 +116,7 @@ h1 {
 
 @media (max-width: 480px) {
 
-    .login-card {
+    .orcamento-card {
         margin-top: 20px;
         padding: 20px;
     }
@@ -139,7 +137,7 @@ h1 {
 }
 
 @media (min-width: 1024px) {
-    body.login-page {
+    body.orcamento-page {
         align-items: center;
     }
 }
