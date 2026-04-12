@@ -1,25 +1,32 @@
 <header class="header">
     <div class="container header-content">
 
-        <h1 class="logo">
-            <a href="/">
-                <img src="/img/img-logo.png" alt="Logo Agência Wolf">
+        <div class="logo">
+            <a href="/" aria-label="Ir para página inicial da Agência Wolf">
+                <img src="/img/img-logo.png" alt="Logo da Agência Wolf">
                 Agência Wolf
             </a>
-        </h1>
+        </div>
 
 
-        <div class="menu-toggle" id="menu-toggle">☰</div>
 
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="#">Início</a></li>
+        <nav class="nav" aria-label="Menu principal">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegaçao" aria-expanded="false"
+                aria-controls="nav-list">☰</button>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="/">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#portifolio">Portfólio</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="/orcamento">Orçamento</a></li>
                 <li><a href="/login">Login</a></li>
+                <li><a href="/perfil" aria-label="Ir para o perfil do usuário"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg></a></li>
             </ul>
         </nav>
 

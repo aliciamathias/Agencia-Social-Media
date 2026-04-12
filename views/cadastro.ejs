@@ -22,49 +22,60 @@
 
             <h1>Criar conta</h1>
 
-            <form action="/cadastro" method="POST" autocomplete="off">
-
-                <div class="input-group">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required autofocus>
+            <% if (ok) { %>
+                <div class="success-message">
+                    <p>Conta criada com sucesso!</p>
                 </div>
+                <% } %>
 
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-                </div>
+                    <% if (error) { %>
+                        <div class="error-message">
+                            <p>
+                                <%= error %>
+                            </p>
+                        </div>
+                        <% } %>
 
-                <div class="input-group">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
-                </div>
+                            <form action="/cadastro" method="POST" autocomplete="off">
 
-                <div class="input-group">
-                    <label for="confirmPassword">Confirmar senha</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirme sua senha"
-                        required>
-                </div>
+                                <div class="input-group">
+                                    <label for="name">Nome</label>
+                                    <input type="text" id="name" name="nome" placeholder="Digite seu nome" required
+                                        autofocus>
+                                </div>
 
-                <p class="helper-text">
-                    Já tem uma conta? <a href="/login">Entrar</a>
-                </p>
+                                <div class="input-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                                </div>
 
-                <div class="actions">
-                    <button type="submit" class="btn-primary">
-                        Cadastrar
-                    </button>
-                </div>
+                                <div class="input-group">
+                                    <label for="password">Senha</label>
+                                    <input type="password" id="password" name="senha" placeholder="Digite sua senha"
+                                        required>
+                                </div>
 
-            </form>
+                                <div class="input-group">
+                                    <label for="confirmPassword">Confirmar senha</label>
+                                    <input type="password" id="confirmPassword" name="senha2"
+                                        placeholder="Confirme sua senha" required>
+                                </div>
+
+                                <p class="helper-text">
+                                    Já tem uma conta? <a href="/login">Entrar</a>
+                                </p>
+
+                                <div class="actions">
+                                    <button type="submit" class="btn-primary">
+                                        Cadastrar
+                                    </button>
+                                </div>
+
+                            </form>
         </div>
-
-        <footer class="footer">
-            <%- include('partials/footer') %>
-        </footer>
-
     </main>
-
-    <%- include('partials/libras') %>
+    <%- include('partials/footer') %>
+        <%- include('partials/libras') %>
 </body>
 
 </html>
